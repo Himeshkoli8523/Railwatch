@@ -56,13 +56,6 @@ Auth screen now matches onboarding/password API payloads with mock flows:
 
 No live backend call is performed yet; forms are wired to local mock client methods.
 
-## Offline / Slow Backend Simulation
-
-- Open Settings tab.
-- `Toggle offline` to show offline banner and last sync.
-- `Toggle slow backend` to show slow-backend fallback banner.
-- `Resolve conflict` opens Keep Local / Keep Server modal.
-
 ## Mock API Stubs
 
 Implemented in `lib/core/network/mock_api_client.dart`:
@@ -113,4 +106,5 @@ Local state (screen-scoped):
 
 - UI keeps AI outputs as simple tags + confidence labels only.
 - No advanced overlays/heatmaps are implemented by design.
+
 
