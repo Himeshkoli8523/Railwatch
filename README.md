@@ -81,15 +81,6 @@ Mock payload file: `assets/mock_data.json`
 - Toggle between `List` and `Grid` views for gallery-style browsing
 - Detail view keeps secure playback indicator and metadata/report-oriented actions
 
-## Storybook-like Gallery
-
-Open Settings → `Open state gallery` to preview:
-
-- loading skeletons
-- empty state
-- network error card
-- offline banner preview
-
 ## Sequence Diagram (ASCII)
 
 ```text
@@ -122,3 +113,4 @@ Local state (screen-scoped):
 
 - UI keeps AI outputs as simple tags + confidence labels only.
 - No advanced overlays/heatmaps are implemented by design.
+
