@@ -5,9 +5,12 @@ Flutter UI scaffold for an Enterprise IoT CCTV Train Monitoring Platform.
 ## Run
 
 1. `flutter pub get`
-2. `flutter run --dart-define=FLAVOR=dev`
-
-Supported flavors: `dev`, `staging`, `prod`.
+2. `flutter run --dart-define=API_BASE_URL=<your Device/lan IP add>:8000`
+3. `cd D:\cctv\backend`
+4. `python -m venv .venv`
+5. `.\.venv\Scripts\Activate.ps1`
+6. `pip install -r requirements.txt`
+7. `uvicorn main:app --host 0.0.0.0 --port 8000 --reload`
 
 ## Expected Clean Architecture Structure
 
@@ -101,6 +104,7 @@ Local state (screen-scoped):
 - list/grid toggle and item selection
 - filters and modals (auth/settings/videos)
 - temporary loading/error placeholders
+
 
 
 
