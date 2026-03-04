@@ -102,9 +102,5 @@ Local state (screen-scoped):
 - filters and modals (auth/settings/videos)
 - temporary loading/error placeholders
 
-## Notes
-
-- UI keeps AI outputs as simple tags + confidence labels only.
-- No advanced overlays/heatmaps are implemented by design.
 
 
