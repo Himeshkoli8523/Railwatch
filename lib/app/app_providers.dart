@@ -3,6 +3,7 @@ import 'dart:convert';
 
 import 'package:cctv/core/constants/app_constants.dart';
 import 'package:cctv/core/constants/app_enums.dart';
+import 'package:cctv/core/network/api_client.dart';
 import 'package:cctv/core/network/mock_api_client.dart';
 import 'package:cctv/features/alerts/data/repositories/alerts_repository_impl.dart';
 import 'package:cctv/features/alerts/domain/entities/alert_item.dart';
@@ -63,6 +64,15 @@ final authDataSourceProvider = Provider<AuthDataSource>((_) {
   }
 });
 
+const _apiBaseUrl = String.fromEnvironment(
+  'API_BASE_URL',
+  defaultValue: 'http://10.0.2.2:8000',
+);
+
+final apiClientProvider = Provider<ApiClient>((_) {
+  return ApiClient(baseUrl: _apiBaseUrl);
+});
+
 // ── Repositories ─────────────────────────────────────────────────────────────
 
 final mockApiClientProvider = Provider<MockApiClient>((ref) => MockApiClient());
@@ -72,7 +82,7 @@ final authRepositoryProvider = Provider<AuthRepository>((ref) {
 });
 
 final videosRepositoryProvider = Provider<VideosRepository>((ref) {
-  return const VideosRepositoryImpl();
+  return VideosRepositoryImpl(ref.watch(apiClientProvider));
 });
 
 final alertsRepositoryProvider = Provider<AlertsRepository>((ref) {
@@ -84,7 +94,7 @@ final profileRepositoryProvider = Provider<ProfileRepository>((ref) {
 });
 
 final dashboardRepositoryProvider = Provider<DashboardRepository>((ref) {
-  return DashboardRepositoryImpl();
+  return DashboardRepositoryImpl(ref.watch(apiClientProvider));
 });
 
 // ── Auth State ────────────────────────────────────────────────────────────────

@@ -1,19 +1,46 @@
 import 'package:cctv/core/constants/app_enums.dart';
+import 'package:cctv/core/network/api_client.dart';
 import 'package:cctv/features/dashboard/domain/entities/bucket_item.dart';
 import 'package:cctv/features/dashboard/domain/entities/dashboard_summary.dart';
 import 'package:cctv/features/dashboard/domain/entities/report_item.dart';
 import 'package:cctv/features/dashboard/domain/repositories/dashboard_repository.dart';
 
 class DashboardRepositoryImpl implements DashboardRepository {
+  DashboardRepositoryImpl(this._api);
+
+  final ApiClient _api;
+
   @override
   Future<DashboardSummary> getSummary({required String range}) async {
-    await Future<void>.delayed(const Duration(milliseconds: 600));
-    return const DashboardSummary(
-      activeAlerts: '21',
-      camerasOnline: '148/152',
-      defectsToday: '9',
-      ingestionRate: '182 MB/s',
-    );
+    try {
+      final raw = await _api.getJson('/api/dashboard/summary');
+      if (raw is! Map) {
+        throw const FormatException('Invalid dashboard summary payload');
+      }
+
+      final json = Map<String, dynamic>.from(raw);
+      final totalVideosToday =
+          (json['total_videos_today'] as num?)?.toInt() ?? 0;
+      final totalTrainsMonitored =
+          (json['total_trains_monitored'] as num?)?.toInt() ?? 0;
+      final alertsGenerated = (json['alerts_generated'] as num?)?.toInt() ?? 0;
+      final storageUsageGb =
+          (json['storage_usage_gb'] as num?)?.toDouble() ?? 0;
+
+      return DashboardSummary(
+        activeAlerts: alertsGenerated.toString(),
+        camerasOnline: totalTrainsMonitored.toString(),
+        defectsToday: totalVideosToday.toString(),
+        ingestionRate: '${storageUsageGb.toStringAsFixed(1)} GB',
+      );
+    } catch (_) {
+      return const DashboardSummary(
+        activeAlerts: '0',
+        camerasOnline: '0',
+        defectsToday: '0',
+        ingestionRate: '0.0 GB',
+      );
+    }
   }
 
   @override
