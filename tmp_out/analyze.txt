@@ -1,0 +1,31 @@
+﻿Analyzing cctv...                                               
+
+  error - Undefined name 'videosStateProvider' - lib\features\videos\presentation\videos_screen.dart:40:18 - undefined_identifier
+  error - Undefined name 'videosStateProvider' - lib\features\videos\presentation\videos_screen.dart:44:16 - undefined_identifier
+  error - Undefined name 'videosStateProvider' - lib\features\videos\presentation\videos_screen.dart:122:44 - undefined_identifier
+  error - Undefined name 'videosStateProvider' - lib\features\videos\presentation\videos_screen.dart:133:33 - undefined_identifier
+  error - Undefined name 'videosStateProvider' - lib\features\videos\presentation\videos_screen.dart:147:39 - undefined_identifier
+
+flutter : 5 issues 
+found. (ran in 3.8s)
+At line:1 char:60
++ ...  Directory 
+-Force -Path 
+d:\cctv\tmp_out; 
+flutter analyze 2>&1 
+| Out-F ...
++                    
+                     
+     
+~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (5 issue   
+ s found. (ran in    
+ 3.8s):String) [    
+], RemoteExcepti    
+on
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 

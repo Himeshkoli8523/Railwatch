@@ -1,0 +1,7 @@
+[error] Undefined name 'videosStateProvider' (D:\cctv\lib\features\videos\presentation\videos_screen.dart:40:18)
+[error] Undefined name 'videosStateProvider' (D:\cctv\lib\features\videos\presentation\videos_screen.dart:44:16)
+[error] Undefined name 'videosStateProvider' (D:\cctv\lib\features\videos\presentation\videos_screen.dart:122:44)
+[error] Undefined name 'videosStateProvider' (D:\cctv\lib\features\videos\presentation\videos_screen.dart:133:33)
+[error] Undefined name 'videosStateProvider' (D:\cctv\lib\features\videos\presentation\videos_screen.dart:147:39)
+[error] The argument type 'void Function()' can't be assigned to the parameter type 'void Function(BuildContext)'.  (D:\cctv\lib\features\videos\presentation\video_player_screen.dart:53:20)
+[error] The argument type 'void Function()' can't be assigned to the parameter type 'void Function(BuildContext)'.  (D:\cctv\lib\features\videos\presentation\video_player_screen.dart:58:20)

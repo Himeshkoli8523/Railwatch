@@ -1,0 +1,28 @@
+﻿Analyzing cctv...                                               
+
+  error - The argument type 'void Function()' can't be assigned to the parameter type 'void Function(BuildContext)'.  - lib\features\videos\presentation\video_player_screen.dart:53:20 - argument_type_not_assignable
+  error - The argument type 'void Function()' can't be assigned to the parameter type 'void Function(BuildContext)'.  - lib\features\videos\presentation\video_player_screen.dart:58:20 - argument_type_not_assignable
+  error - Undefined name 'videosStateProvider' - lib\features\videos\presentation\videos_screen.dart:40:18 - undefined_identifier
+  error - Undefined name 'videosStateProvider' - lib\features\videos\presentation\videos_screen.dart:44:16 - undefined_identifier
+  error - Undefined name 'videosStateProvider' - lib\features\videos\presentation\videos_screen.dart:122:44 - undefined_identifier
+  error - Undefined name 'videosStateProvider' - lib\features\videos\presentation\videos_screen.dart:133:33 - undefined_identifier
+  error - Undefined name 'videosStateProvider' - lib\features\videos\presentation\videos_screen.dart:147:39 - undefined_identifier
+
+flutter : 7 issues found. 
+(ran in 4.0s)
+At line:1 char:1
++ flutter analyze --no-pub 
+> 
+D:\cctv\analyze_output.txt 
+2>&1; Get-Conte ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~
+    + CategoryInfo          
+    : NotSpecified: (7 iss  
+  ues found. (ran in 4.0s   
+ ):String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 

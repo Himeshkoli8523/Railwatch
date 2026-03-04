@@ -1,0 +1,9 @@
+Analyzing lib...
+
+  error - features\videos\presentation\videos_screen.dart:40:18 - Undefined name 'videosStateProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\videos\presentation\videos_screen.dart:44:16 - Undefined name 'videosStateProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\videos\presentation\videos_screen.dart:122:44 - Undefined name 'videosStateProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\videos\presentation\videos_screen.dart:133:33 - Undefined name 'videosStateProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\videos\presentation\videos_screen.dart:147:39 - Undefined name 'videosStateProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+
+5 issues found.

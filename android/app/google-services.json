@@ -1,0 +1,29 @@
+﻿{
+  "project_info": {
+    "project_number": "131877908080",
+    "project_id": "cctv-watch-app",
+    "storage_bucket": "cctv-watch-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131877908080:android:44289cfa988aa2bd264eb5",
+        "android_client_info": {
+          "package_name": "com.example.cctv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFMqtvUDvS1kA91r-fM_6Hs7aLSKItnbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

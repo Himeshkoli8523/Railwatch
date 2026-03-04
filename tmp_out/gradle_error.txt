@@ -1,0 +1,60 @@
+﻿Running Gradle task 'assembleDebug'...                          
+flutter : 
+At line:1 char:1
++ flutter build apk 
+--debug 2>&1 | 
+Out-File -Encoding 
+utf8 d:\cctv\tmp_ ...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo   
+           : 
+NotSpecified: (:Stri 
+   ng) [], 
+RemoteException
+    + FullyQualifiedE
+rrorId     : 
+NativeCommandError
+ 
+FAILURE: Build 
+failed with an 
+exception.
+
+* What went wrong:
+A problem occurred 
+configuring root 
+project 'android'.
+> Could not resolve 
+all artifacts for 
+configuration 
+'classpath'.
+   > Cannot resolve 
+external dependency c
+om.google.gms:google-
+services:4.4.2 
+because no 
+repositories are 
+defined.
+     Required by:
+         root 
+project :
+
+* Try:
+> Run with 
+--stacktrace option 
+to get the stack 
+trace.
+> Run with --info or 
+--debug option to 
+get more log output.
+> Run with --scan to 
+get full insights.
+> Get more help at ht
+tps://help.gradle.org
+.
+
+BUILD FAILED in 3s
+Running Gradle task 'assembleDebug'...                              4.1s
+Gradle task 
+assembleDebug failed 
+with exit code 1

@@ -1,0 +1,102 @@
+{
+  "videos": [
+    {
+      "id": "V-001",
+      "camera_id": "CAM-01",
+      "wagon_id": "W-01",
+      "train_id": "TR-778",
+      "timestamp": "2026-03-01T08:12:10Z",
+      "duration": "00:01:28",
+      "thumbnail_url": "https://picsum.photos/seed/video1/240/140",
+      "ai_tags": ["DoorOpen", "Smoke"],
+      "severity": "critical",
+      "s3_signed_url_status": "valid"
+    },
+    {
+      "id": "V-002",
+      "camera_id": "CAM-09",
+      "wagon_id": "W-12",
+      "train_id": "TR-778",
+      "timestamp": "2026-03-01T08:14:10Z",
+      "duration": "00:00:52",
+      "thumbnail_url": "https://picsum.photos/seed/video2/240/140",
+      "ai_tags": ["BearingHeat"],
+      "severity": "high",
+      "s3_signed_url_status": "expired"
+    },
+    {
+      "id": "V-003",
+      "camera_id": "CAM-18",
+      "wagon_id": "W-03",
+      "train_id": "TR-401",
+      "timestamp": "2026-03-01T08:18:30Z",
+      "duration": "00:02:10",
+      "thumbnail_url": "https://picsum.photos/seed/video3/240/140",
+      "ai_tags": ["LooseLatch"],
+      "severity": "medium",
+      "s3_signed_url_status": "valid"
+    },
+    {
+      "id": "V-004",
+      "camera_id": "CAM-07",
+      "wagon_id": "W-07",
+      "train_id": "TR-002",
+      "timestamp": "2026-03-01T08:20:20Z",
+      "duration": "00:00:44",
+      "thumbnail_url": "https://picsum.photos/seed/video4/240/140",
+      "ai_tags": ["DoorOpen"],
+      "severity": "low",
+      "s3_signed_url_status": "valid"
+    },
+    {
+      "id": "V-005",
+      "camera_id": "CAM-04",
+      "wagon_id": "W-15",
+      "train_id": "TR-002",
+      "timestamp": "2026-03-01T08:22:12Z",
+      "duration": "00:01:01",
+      "thumbnail_url": "https://picsum.photos/seed/video5/240/140",
+      "ai_tags": ["Smoke"],
+      "severity": "critical",
+      "s3_signed_url_status": "valid"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "A-001",
+      "camera_id": "CAM-01",
+      "snapshot_url": "https://picsum.photos/seed/alert1/180/100",
+      "detection_type": "Smoke Detection",
+      "confidence": 0.96,
+      "timestamp": "2026-03-01T08:12:11Z",
+      "dedup_group": "DG-7",
+      "severity": "critical"
+    },
+    {
+      "id": "A-002",
+      "camera_id": "CAM-09",
+      "snapshot_url": "https://picsum.photos/seed/alert2/180/100",
+      "detection_type": "Door Open",
+      "confidence": 0.83,
+      "timestamp": "2026-03-01T08:14:11Z",
+      "dedup_group": "DG-2",
+      "severity": "high"
+    },
+    {
+      "id": "A-003",
+      "camera_id": "CAM-04",
+      "snapshot_url": "https://picsum.photos/seed/alert3/180/100",
+      "detection_type": "Bearing Heat",
+      "confidence": 0.78,
+      "timestamp": "2026-03-01T08:20:00Z",
+      "dedup_group": "DG-9",
+      "severity": "medium"
+    }
+  ],
+  "user_profile": {
+    "id": "U-001",
+    "name": "Ops User",
+    "role": "operator",
+    "permissions": ["view_video", "ack_alert", "comment"]
+  }
+}

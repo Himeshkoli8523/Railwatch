@@ -1,0 +1,2 @@
+[error] The argument type 'StreamProvider<int>' can't be assigned to the parameter type 'ProviderListenable<int>'.  (D:\cctv\lib\app\main_shell.dart:30:21)
+[warning] The value of the local variable 'tokenRemaining' isn't used (D:\cctv\lib\app\main_shell.dart:28:11)
