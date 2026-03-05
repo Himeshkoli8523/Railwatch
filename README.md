@@ -186,15 +186,6 @@ Status:
 	- Predictive thumbnail prefetch for next viewport window
 	- Adaptive quality thumbnails based on network class and device memory
 
-### 4) System failures: AI detection failures, network drops mid-request
-
-Architecture answer:
-
-- AI failures should produce explicit status (`pending`, `failed`, `degraded`) instead of silent omission.
-- Network drops should support retry with idempotency keys and safe request replay.
-- UI should preserve user context (scroll/filter state) and expose one-tap recovery.
-- Critical actions should be queued offline and synced when connection restores.
-
 Status:
 
 - `Implemented`:
@@ -213,6 +204,7 @@ Status:
 
 This README section is the source of truth for Part 2 design commitments.
 Any item marked `Working Phase` or `Future` should be tracked in sprint planning before production rollout.
+
 
 
 
