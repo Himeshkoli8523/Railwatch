@@ -57,7 +57,6 @@ Auth screen now matches onboarding/password API payloads with mock flows:
 - `POST /auth/change-password` (`new_password`, optional `phone_no`/`reset_token`)
 - `POST /auth/change-password/authenticated` (`new_password`)
 
-No live backend call is performed yet; forms are wired to local mock client methods.
 
 ## Mock API Stubs
 
@@ -204,6 +203,7 @@ Status:
 
 This README section is the source of truth for Part 2 design commitments.
 Any item marked `Working Phase` or `Future` should be tracked in sprint planning before production rollout.
+
 
 
 
